@@ -1,0 +1,319 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\alexa\\OneDrive\\Рабочий стол\\Projects\\CS\\SPbSTU\\LongArithmetic\\LongArithmetic\\LongArithmetic.Tests\\LongArithmetic.Tests.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\alexa\\OneDrive\\Рабочий стол\\Projects\\CS\\SPbSTU\\LongArithmetic\\LongArithmetic\\LongArithmetic.Core\\LongArithmetic.Core.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\alexa\\OneDrive\\Рабочий стол\\Projects\\CS\\SPbSTU\\LongArithmetic\\LongArithmetic\\LongArithmetic.Core\\LongArithmetic.Core.csproj",
+        "projectName": "LongArithmetic.Core",
+        "projectPath": "C:\\Users\\alexa\\OneDrive\\Рабочий стол\\Projects\\CS\\SPbSTU\\LongArithmetic\\LongArithmetic\\LongArithmetic.Core\\LongArithmetic.Core.csproj",
+        "packagesPath": "C:\\Users\\alexa\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\alexa\\OneDrive\\Рабочий стол\\Projects\\CS\\SPbSTU\\LongArithmetic\\LongArithmetic\\LongArithmetic.Core\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\alexa\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net9.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net9.0": {
+            "targetAlias": "net9.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.200"
+      },
+      "frameworks": {
+        "net9.0": {
+          "targetAlias": "net9.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.205/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\alexa\\OneDrive\\Рабочий стол\\Projects\\CS\\SPbSTU\\LongArithmetic\\LongArithmetic\\LongArithmetic.DataLayer\\LongArithmetic.DataLayer.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\alexa\\OneDrive\\Рабочий стол\\Projects\\CS\\SPbSTU\\LongArithmetic\\LongArithmetic\\LongArithmetic.DataLayer\\LongArithmetic.DataLayer.csproj",
+        "projectName": "LongArithmetic.DataLayer",
+        "projectPath": "C:\\Users\\alexa\\OneDrive\\Рабочий стол\\Projects\\CS\\SPbSTU\\LongArithmetic\\LongArithmetic\\LongArithmetic.DataLayer\\LongArithmetic.DataLayer.csproj",
+        "packagesPath": "C:\\Users\\alexa\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\alexa\\OneDrive\\Рабочий стол\\Projects\\CS\\SPbSTU\\LongArithmetic\\LongArithmetic\\LongArithmetic.DataLayer\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\alexa\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net9.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net9.0": {
+            "targetAlias": "net9.0",
+            "projectReferences": {
+              "C:\\Users\\alexa\\OneDrive\\Рабочий стол\\Projects\\CS\\SPbSTU\\LongArithmetic\\LongArithmetic\\LongArithmetic.Core\\LongArithmetic.Core.csproj": {
+                "projectPath": "C:\\Users\\alexa\\OneDrive\\Рабочий стол\\Projects\\CS\\SPbSTU\\LongArithmetic\\LongArithmetic\\LongArithmetic.Core\\LongArithmetic.Core.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.200"
+      },
+      "frameworks": {
+        "net9.0": {
+          "targetAlias": "net9.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.205/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\alexa\\OneDrive\\Рабочий стол\\Projects\\CS\\SPbSTU\\LongArithmetic\\LongArithmetic\\LongArithmetic.Tests\\LongArithmetic.Tests.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\alexa\\OneDrive\\Рабочий стол\\Projects\\CS\\SPbSTU\\LongArithmetic\\LongArithmetic\\LongArithmetic.Tests\\LongArithmetic.Tests.csproj",
+        "projectName": "LongArithmetic.Tests",
+        "projectPath": "C:\\Users\\alexa\\OneDrive\\Рабочий стол\\Projects\\CS\\SPbSTU\\LongArithmetic\\LongArithmetic\\LongArithmetic.Tests\\LongArithmetic.Tests.csproj",
+        "packagesPath": "C:\\Users\\alexa\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\alexa\\OneDrive\\Рабочий стол\\Projects\\CS\\SPbSTU\\LongArithmetic\\LongArithmetic\\LongArithmetic.Tests\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\alexa\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net9.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net9.0": {
+            "targetAlias": "net9.0",
+            "projectReferences": {
+              "C:\\Users\\alexa\\OneDrive\\Рабочий стол\\Projects\\CS\\SPbSTU\\LongArithmetic\\LongArithmetic\\LongArithmetic.Core\\LongArithmetic.Core.csproj": {
+                "projectPath": "C:\\Users\\alexa\\OneDrive\\Рабочий стол\\Projects\\CS\\SPbSTU\\LongArithmetic\\LongArithmetic\\LongArithmetic.Core\\LongArithmetic.Core.csproj"
+              },
+              "C:\\Users\\alexa\\OneDrive\\Рабочий стол\\Projects\\CS\\SPbSTU\\LongArithmetic\\LongArithmetic\\LongArithmetic.DataLayer\\LongArithmetic.DataLayer.csproj": {
+                "projectPath": "C:\\Users\\alexa\\OneDrive\\Рабочий стол\\Projects\\CS\\SPbSTU\\LongArithmetic\\LongArithmetic\\LongArithmetic.DataLayer\\LongArithmetic.DataLayer.csproj"
+              },
+              "C:\\Users\\alexa\\OneDrive\\Рабочий стол\\Projects\\CS\\SPbSTU\\LongArithmetic\\LongArithmetic\\LongArithmetic\\LongArithmetic.csproj": {
+                "projectPath": "C:\\Users\\alexa\\OneDrive\\Рабочий стол\\Projects\\CS\\SPbSTU\\LongArithmetic\\LongArithmetic\\LongArithmetic\\LongArithmetic.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.200"
+      },
+      "frameworks": {
+        "net9.0": {
+          "targetAlias": "net9.0",
+          "dependencies": {
+            "FluentAssertions": {
+              "target": "Package",
+              "version": "[6.12.0, )"
+            },
+            "Microsoft.NET.Test.Sdk": {
+              "target": "Package",
+              "version": "[17.12.0, )"
+            },
+            "Moq": {
+              "target": "Package",
+              "version": "[4.20.70, )"
+            },
+            "NUnit": {
+              "target": "Package",
+              "version": "[4.2.2, )"
+            },
+            "NUnit.Analyzers": {
+              "target": "Package",
+              "version": "[4.4.0, )"
+            },
+            "NUnit3TestAdapter": {
+              "target": "Package",
+              "version": "[4.6.0, )"
+            },
+            "coverlet.collector": {
+              "target": "Package",
+              "version": "[6.0.2, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.205/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\alexa\\OneDrive\\Рабочий стол\\Projects\\CS\\SPbSTU\\LongArithmetic\\LongArithmetic\\LongArithmetic\\LongArithmetic.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\alexa\\OneDrive\\Рабочий стол\\Projects\\CS\\SPbSTU\\LongArithmetic\\LongArithmetic\\LongArithmetic\\LongArithmetic.csproj",
+        "projectName": "LongArithmetic",
+        "projectPath": "C:\\Users\\alexa\\OneDrive\\Рабочий стол\\Projects\\CS\\SPbSTU\\LongArithmetic\\LongArithmetic\\LongArithmetic\\LongArithmetic.csproj",
+        "packagesPath": "C:\\Users\\alexa\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\alexa\\OneDrive\\Рабочий стол\\Projects\\CS\\SPbSTU\\LongArithmetic\\LongArithmetic\\LongArithmetic\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\alexa\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net9.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net9.0": {
+            "targetAlias": "net9.0",
+            "projectReferences": {
+              "C:\\Users\\alexa\\OneDrive\\Рабочий стол\\Projects\\CS\\SPbSTU\\LongArithmetic\\LongArithmetic\\LongArithmetic.Core\\LongArithmetic.Core.csproj": {
+                "projectPath": "C:\\Users\\alexa\\OneDrive\\Рабочий стол\\Projects\\CS\\SPbSTU\\LongArithmetic\\LongArithmetic\\LongArithmetic.Core\\LongArithmetic.Core.csproj"
+              },
+              "C:\\Users\\alexa\\OneDrive\\Рабочий стол\\Projects\\CS\\SPbSTU\\LongArithmetic\\LongArithmetic\\LongArithmetic.DataLayer\\LongArithmetic.DataLayer.csproj": {
+                "projectPath": "C:\\Users\\alexa\\OneDrive\\Рабочий стол\\Projects\\CS\\SPbSTU\\LongArithmetic\\LongArithmetic\\LongArithmetic.DataLayer\\LongArithmetic.DataLayer.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.200"
+      },
+      "frameworks": {
+        "net9.0": {
+          "targetAlias": "net9.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.205/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

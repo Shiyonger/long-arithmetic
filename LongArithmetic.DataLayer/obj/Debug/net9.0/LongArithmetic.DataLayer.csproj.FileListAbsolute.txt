@@ -1,0 +1,15 @@
+C:\Users\alexa\OneDrive\Рабочий стол\Projects\CS\SPbSTU\LongArithmetic\LongArithmetic\LongArithmetic.DataLayer\bin\Debug\net9.0\LongArithmetic.DataLayer.deps.json
+C:\Users\alexa\OneDrive\Рабочий стол\Projects\CS\SPbSTU\LongArithmetic\LongArithmetic\LongArithmetic.DataLayer\obj\Debug\net9.0\LongArithmetic.DataLayer.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\alexa\OneDrive\Рабочий стол\Projects\CS\SPbSTU\LongArithmetic\LongArithmetic\LongArithmetic.DataLayer\obj\Debug\net9.0\LongArithmetic.DataLayer.AssemblyInfoInputs.cache
+C:\Users\alexa\OneDrive\Рабочий стол\Projects\CS\SPbSTU\LongArithmetic\LongArithmetic\LongArithmetic.DataLayer\obj\Debug\net9.0\LongArithmetic.DataLayer.AssemblyInfo.cs
+C:\Users\alexa\OneDrive\Рабочий стол\Projects\CS\SPbSTU\LongArithmetic\LongArithmetic\LongArithmetic.DataLayer\obj\Debug\net9.0\LongArit.7A752244.Up2Date
+C:\Users\alexa\OneDrive\Рабочий стол\Projects\CS\SPbSTU\LongArithmetic\LongArithmetic\LongArithmetic.DataLayer\bin\Debug\net9.0\LongArithmetic.DataLayer.dll
+C:\Users\alexa\OneDrive\Рабочий стол\Projects\CS\SPbSTU\LongArithmetic\LongArithmetic\LongArithmetic.DataLayer\bin\Debug\net9.0\LongArithmetic.DataLayer.pdb
+C:\Users\alexa\OneDrive\Рабочий стол\Projects\CS\SPbSTU\LongArithmetic\LongArithmetic\LongArithmetic.DataLayer\bin\Debug\net9.0\LongArithmetic.Core.dll
+C:\Users\alexa\OneDrive\Рабочий стол\Projects\CS\SPbSTU\LongArithmetic\LongArithmetic\LongArithmetic.DataLayer\bin\Debug\net9.0\LongArithmetic.Core.pdb
+C:\Users\alexa\OneDrive\Рабочий стол\Projects\CS\SPbSTU\LongArithmetic\LongArithmetic\LongArithmetic.DataLayer\obj\Debug\net9.0\LongArithmetic.DataLayer.csproj.AssemblyReference.cache
+C:\Users\alexa\OneDrive\Рабочий стол\Projects\CS\SPbSTU\LongArithmetic\LongArithmetic\LongArithmetic.DataLayer\obj\Debug\net9.0\LongArithmetic.DataLayer.csproj.CoreCompileInputs.cache
+C:\Users\alexa\OneDrive\Рабочий стол\Projects\CS\SPbSTU\LongArithmetic\LongArithmetic\LongArithmetic.DataLayer\obj\Debug\net9.0\LongArithmetic.DataLayer.dll
+C:\Users\alexa\OneDrive\Рабочий стол\Projects\CS\SPbSTU\LongArithmetic\LongArithmetic\LongArithmetic.DataLayer\obj\Debug\net9.0\refint\LongArithmetic.DataLayer.dll
+C:\Users\alexa\OneDrive\Рабочий стол\Projects\CS\SPbSTU\LongArithmetic\LongArithmetic\LongArithmetic.DataLayer\obj\Debug\net9.0\LongArithmetic.DataLayer.pdb
+C:\Users\alexa\OneDrive\Рабочий стол\Projects\CS\SPbSTU\LongArithmetic\LongArithmetic\LongArithmetic.DataLayer\obj\Debug\net9.0\ref\LongArithmetic.DataLayer.dll
