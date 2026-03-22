@@ -1,3 +1,4 @@
+using System;
 using System.Text;
 using LongArithmetic.Core.Models;
 using static LongArithmetic.Core.Helpers.Helpers;
@@ -6,31 +7,30 @@ namespace LongArithmetic.Core;
 
 public static class BigMath
 {
+    private const int KaratsubaThreshold = 1024;
+
     public static BigNumber Add(BigNumber a, BigNumber b)
     {
         var aStr = Trim(a.Value);
         var bStr = Trim(b.Value);
-
-        if (aStr.Length > bStr.Length) (aStr, bStr) = (bStr, aStr);
-
-        aStr = aStr.PadLeft(bStr.Length, '0');
-
-        var result = new StringBuilder();
+        var maxLength = Math.Max(aStr.Length, bStr.Length);
+        var result = new char[maxLength + 1];
         var carry = 0;
-        for (var i = aStr.Length - 1; i >= 0; i--)
+
+        for (var i = 0; i < maxLength; i++)
         {
-            var num1 = aStr[i] - '0';
-            var num2 = bStr[i] - '0';
+            var aIndex = aStr.Length - 1 - i;
+            var bIndex = bStr.Length - 1 - i;
+            var num1 = aIndex >= 0 ? aStr[aIndex] - '0' : 0;
+            var num2 = bIndex >= 0 ? bStr[bIndex] - '0' : 0;
             var sum = num1 + num2 + carry;
-            var res = sum % 10;
+
+            result[maxLength - i] = (char)('0' + (sum % 10));
             carry = sum / 10;
-            result.Insert(0, (char)('0' + res));
         }
 
-        if (carry != 0)
-            result.Insert(0, carry);
-
-        return new BigNumber(Trim(result.ToString()));
+        result[0] = (char)('0' + carry);
+        return new BigNumber(Trim(new string(result)));
     }
 
     public static BigNumber Subtract(BigNumber a, BigNumber b)
@@ -50,29 +50,30 @@ public static class BigMath
             return new BigNumber("0");
         }
 
-        bStr = bStr.PadLeft(aStr.Length, '0');
+        var result = new char[aStr.Length];
+        var borrow = 0;
 
-        var sb = new StringBuilder();
-        var carry = 0;
         for (var i = aStr.Length - 1; i >= 0; i--)
         {
-            var nextCarry = false;
-            var num1 = aStr[i] - '0';
-            var num2 = bStr[i] - '0';
-            if (num1 - carry < num2)
+            var num1 = aStr[i] - '0' - borrow;
+            var bIndex = bStr.Length - aStr.Length + i;
+            var num2 = bIndex >= 0 ? bStr[bIndex] - '0' : 0;
+
+            if (num1 < num2)
             {
                 num1 += 10;
-                nextCarry = true;
+                borrow = 1;
+            }
+            else
+            {
+                borrow = 0;
             }
 
-            var res = (num1 - num2 - carry);
-            sb.Insert(0, (char)('0' + res));
-            carry = nextCarry ? 1 : 0;
+            result[i] = (char)('0' + (num1 - num2));
         }
 
-        var sanitized = Trim(sb.ToString());
-        if (resultNegative) return new BigNumber("-" + sanitized);
-        return new BigNumber(sanitized);
+        var sanitized = Trim(new string(result));
+        return resultNegative ? new BigNumber("-" + sanitized) : new BigNumber(sanitized);
     }
 
     public static BigNumber Multiply(BigNumber a, BigNumber b, string method = "auto")
@@ -82,51 +83,66 @@ public static class BigMath
         if (method == "karatsuba")
             return new BigNumber(MultiplyKaratsuba(a.Value, b.Value));
 
-        if (a.Value.Length < 32 || b.Value.Length < 32)
+        if (a.Value.Length < KaratsubaThreshold || b.Value.Length < KaratsubaThreshold)
             return new BigNumber(MultiplyClassic(a.Value, b.Value));
         return new BigNumber(MultiplyKaratsuba(a.Value, b.Value));
     }
 
-    private static string MultiplyClassic(BigNumber a, BigNumber b)
+    private static string MultiplyClassic(string a, string b)
     {
-        var result = new int[a.Value.Length + b.Value.Length];
-        for (var i = a.Value.Length - 1; i >= 0; i--)
+        a = Trim(a);
+        b = Trim(b);
+
+        if (a == "0" || b == "0") return "0";
+
+        var result = new int[a.Length + b.Length];
+        for (var i = a.Length - 1; i >= 0; i--)
         {
-            for (var j = b.Value.Length - 1; j >= 0; j--)
+            for (var j = b.Length - 1; j >= 0; j--)
             {
-                var mul = (a.Value[i] - '0') * (b.Value[j] - '0');
+                var mul = (a[i] - '0') * (b[j] - '0');
                 var sum = mul + result[i + j + 1];
                 result[i + j + 1] = sum % 10;
                 result[i + j] += sum / 10;
             }
         }
 
-        var sb = new StringBuilder();
-        foreach (var d in result) sb.Append(d);
+        var sb = new StringBuilder(result.Length);
+        foreach (var d in result)
+        {
+            sb.Append((char)('0' + d));
+        }
+
         return Trim(sb.ToString());
     }
 
-    private static string MultiplyKaratsuba(BigNumber first, BigNumber second)
+    private static string MultiplyKaratsuba(string first, string second)
     {
         first = Trim(first);
         second = Trim(second);
 
-        if (first.Value.Length == 1) return MultiplyByDigit(second, int.Parse(first));
-        if (second.Value.Length == 1) return MultiplyByDigit(first, int.Parse(second));
+        if (first == "0" || second == "0") return "0";
+        if (first.Length <= KaratsubaThreshold || second.Length <= KaratsubaThreshold)
+            return MultiplyClassic(first, second);
 
-        var cutPos = GetCutPosition(first, second);
-        var a = GetFirstPart(first, cutPos);
-        var b = GetSecondPart(first, cutPos);
-        var c = GetFirstPart(second, cutPos);
-        var d = GetSecondPart(second, cutPos);
+        var maxLength = Math.Max(first.Length, second.Length);
+        if ((maxLength & 1) == 1) maxLength++;
+
+        first = first.PadLeft(maxLength, '0');
+        second = second.PadLeft(maxLength, '0');
+
+        var half = maxLength / 2;
+        var a = Trim(first[..half]);
+        var b = Trim(first[half..]);
+        var c = Trim(second[..half]);
+        var d = Trim(second[half..]);
+
         var ac = MultiplyKaratsuba(a, c);
         var bd = MultiplyKaratsuba(b, d);
-        var abCd = MultiplyKaratsuba(Add(a, b), Add(c, d));
-        var term0 = Subtract(Subtract(abCd, ac), bd);
-        var padding = b.Length + d.Length;
-        var term1 = term0 + new string('0', padding / 2);
-        var term2 = ac + new string('0', padding);
-        return Add(Add(term1, term2), bd);
+        var abCd = MultiplyKaratsuba(Add(a, b).Value, Add(c, d).Value);
+        var adPlusBc = Subtract(Subtract(abCd, ac), bd).Value;
+
+        return Add(Add(ShiftLeft(ac, half * 2), ShiftLeft(adPlusBc, half)), bd).Value;
     }
 
     public static BigNumber Divide(BigNumber dividend, BigNumber divisor, string method = "classic")
@@ -176,15 +192,15 @@ public static class BigMath
         {
             var sum = Add(left, right);
             var mid = new BigNumber(DivideByTwo(sum.Value));
-            
+
             if (Compare(mid, left) == 0 && Compare(left, right) < 0)
             {
                 mid = Add(left, "1");
             }
-            
+
             var product = Multiply(mid, divisor).Value;
             var cmp = Compare(product, dividend);
-            
+
             if (cmp == 0) return mid.Value;
             if (cmp < 0)
             {
@@ -225,5 +241,12 @@ public static class BigMath
         }
 
         return new BigNumber(resStr);
+    }
+
+    private static string ShiftLeft(string value, int zeroCount)
+    {
+        value = Trim(value);
+        if (value == "0") return "0";
+        return value + new string('0', zeroCount);
     }
 }

@@ -1,6 +1,8 @@
+using System;
 using FluentAssertions;
 using LongArithmetic.Core;
 using LongArithmetic.Core.Models;
+using NUnit.Framework;
 
 namespace LongArithmetic.Tests;
 

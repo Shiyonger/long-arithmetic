@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="980" height="560" viewBox="0 0 980 560">
+<rect width="100%" height="100%" fill="#f8f5ef"/>
+<text x="490.0" y="34" text-anchor="middle" font-family="Georgia, serif" font-size="24" fill="#1f2933">Stage Breakdown on Maximum Dataset</text>
+<line x1="110" y1="90" x2="110" y2="470" stroke="#334e68" stroke-width="2"/>
+<line x1="110" y1="470" x2="940" y2="470" stroke="#334e68" stroke-width="2"/>
+<line x1="110" y1="470.00" x2="940" y2="470.00" stroke="#d9d2c5" stroke-width="1"/>
+<text x="98" y="475.00" text-anchor="end" font-family="Arial, sans-serif" font-size="12" fill="#334e68">0.0s</text>
+<line x1="110" y1="394.00" x2="940" y2="394.00" stroke="#d9d2c5" stroke-width="1"/>
+<text x="98" y="399.00" text-anchor="end" font-family="Arial, sans-serif" font-size="12" fill="#334e68">29.4s</text>
+<line x1="110" y1="318.00" x2="940" y2="318.00" stroke="#d9d2c5" stroke-width="1"/>
+<text x="98" y="323.00" text-anchor="end" font-family="Arial, sans-serif" font-size="12" fill="#334e68">58.7s</text>
+<line x1="110" y1="242.00" x2="940" y2="242.00" stroke="#d9d2c5" stroke-width="1"/>
+<text x="98" y="247.00" text-anchor="end" font-family="Arial, sans-serif" font-size="12" fill="#334e68">88.1s</text>
+<line x1="110" y1="166.00" x2="940" y2="166.00" stroke="#d9d2c5" stroke-width="1"/>
+<text x="98" y="171.00" text-anchor="end" font-family="Arial, sans-serif" font-size="12" fill="#334e68">117.5s</text>
+<line x1="110" y1="90.00" x2="940" y2="90.00" stroke="#d9d2c5" stroke-width="1"/>
+<text x="98" y="95.00" text-anchor="end" font-family="Arial, sans-serif" font-size="12" fill="#334e68">146.8s</text>
+<rect x="132.13" y="469.92" width="55.33" height="0.08" fill="#b23a48"/>
+<rect x="198.53" y="469.92" width="55.33" height="0.08" fill="#2a6f97"/>
+<text x="193.00" y="498" text-anchor="middle" font-family="Arial, sans-serif" font-size="13" fill="#334e68">generation</text>
+<rect x="298.13" y="469.99" width="55.33" height="0.01" fill="#b23a48"/>
+<rect x="364.53" y="469.99" width="55.33" height="0.01" fill="#2a6f97"/>
+<text x="359.00" y="498" text-anchor="middle" font-family="Arial, sans-serif" font-size="13" fill="#334e68">input write</text>
+<rect x="464.13" y="469.95" width="55.33" height="0.05" fill="#b23a48"/>
+<rect x="530.53" y="469.95" width="55.33" height="0.05" fill="#2a6f97"/>
+<text x="525.00" y="498" text-anchor="middle" font-family="Arial, sans-serif" font-size="13" fill="#334e68">load</text>
+<rect x="630.13" y="469.99" width="55.33" height="0.01" fill="#b23a48"/>
+<rect x="696.53" y="469.98" width="55.33" height="0.02" fill="#2a6f97"/>
+<text x="691.00" y="498" text-anchor="middle" font-family="Arial, sans-serif" font-size="13" fill="#334e68">save</text>
+<rect x="796.13" y="124.55" width="55.33" height="345.45" fill="#b23a48"/>
+<rect x="862.53" y="351.49" width="55.33" height="118.51" fill="#2a6f97"/>
+<text x="857.00" y="498" text-anchor="middle" font-family="Arial, sans-serif" font-size="13" fill="#334e68">solve</text>
+<rect x="760" y="98" width="20" height="20" fill="#b23a48"/>
+<text x="790" y="113" font-family="Arial, sans-serif" font-size="14" fill="#1f2933">classic</text>
+<rect x="760" y="126" width="20" height="20" fill="#2a6f97"/>
+<text x="790" y="141" font-family="Arial, sans-serif" font-size="14" fill="#1f2933">karatsuba</text>
+<text x="490.0" y="536" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" fill="#334e68">Measured stage</text>
+<text transform="translate(28 280.0) rotate(-90)" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" fill="#334e68">Stage time</text>
+</svg>

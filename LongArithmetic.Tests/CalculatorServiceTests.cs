@@ -1,7 +1,9 @@
+using System.Collections.Generic;
 using FluentAssertions;
 using LongArithmetic.Core.Interfaces;
 using LongArithmetic.Core.Models;
 using Moq;
+using NUnit.Framework;
 
 namespace LongArithmetic.Tests;
 

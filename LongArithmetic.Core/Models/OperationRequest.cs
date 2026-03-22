@@ -1,3 +1,5 @@
+using System.Collections.Generic;
+
 namespace LongArithmetic.Core.Models;
 
 public class OperationRequest

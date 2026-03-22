@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="520" viewBox="0 0 900 520">
+<rect width="100%" height="100%" fill="#f8f5ef"/>
+<text x="450.0" y="34" text-anchor="middle" font-family="Georgia, serif" font-size="24" fill="#1f2933">Classic / Karatsuba Speedup</text>
+<line x1="80" y1="90" x2="80" y2="440" stroke="#334e68" stroke-width="2"/>
+<line x1="80" y1="440" x2="860" y2="440" stroke="#334e68" stroke-width="2"/>
+<line x1="80" y1="440.00" x2="860" y2="440.00" stroke="#d9d2c5" stroke-width="1"/>
+<text x="68" y="445.00" text-anchor="end" font-family="Arial, sans-serif" font-size="12" fill="#334e68">0.0x</text>
+<line x1="80" y1="370.00" x2="860" y2="370.00" stroke="#d9d2c5" stroke-width="1"/>
+<text x="68" y="375.00" text-anchor="end" font-family="Arial, sans-serif" font-size="12" fill="#334e68">0.7x</text>
+<line x1="80" y1="300.00" x2="860" y2="300.00" stroke="#d9d2c5" stroke-width="1"/>
+<text x="68" y="305.00" text-anchor="end" font-family="Arial, sans-serif" font-size="12" fill="#334e68">1.4x</text>
+<line x1="80" y1="230.00" x2="860" y2="230.00" stroke="#d9d2c5" stroke-width="1"/>
+<text x="68" y="235.00" text-anchor="end" font-family="Arial, sans-serif" font-size="12" fill="#334e68">2.1x</text>
+<line x1="80" y1="160.00" x2="860" y2="160.00" stroke="#d9d2c5" stroke-width="1"/>
+<text x="68" y="165.00" text-anchor="end" font-family="Arial, sans-serif" font-size="12" fill="#334e68">2.8x</text>
+<line x1="80" y1="90.00" x2="860" y2="90.00" stroke="#d9d2c5" stroke-width="1"/>
+<text x="68" y="95.00" text-anchor="end" font-family="Arial, sans-serif" font-size="12" fill="#334e68">3.5x</text>
+<rect x="188.33" y="143.35" width="108.33" height="296.65" fill="#c08497"/>
+<text x="242.50" y="135.35" text-anchor="middle" font-family="Arial, sans-serif" font-size="13" fill="#1f2933">2.95x</text>
+<text x="242.50" y="464" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#334e68">dense / batch 50</text>
+<rect x="383.33" y="146.40" width="108.33" height="293.60" fill="#c08497"/>
+<text x="437.50" y="138.40" text-anchor="middle" font-family="Arial, sans-serif" font-size="13" fill="#1f2933">2.91x</text>
+<text x="437.50" y="464" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#334e68">dense / batch 300</text>
+<rect x="578.33" y="135.65" width="108.33" height="304.35" fill="#84a59d"/>
+<text x="632.50" y="127.65" text-anchor="middle" font-family="Arial, sans-serif" font-size="13" fill="#1f2933">3.02x</text>
+<text x="632.50" y="464" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#334e68">sparse / batch 50</text>
+<rect x="773.33" y="144.25" width="108.33" height="295.75" fill="#84a59d"/>
+<text x="827.50" y="136.25" text-anchor="middle" font-family="Arial, sans-serif" font-size="13" fill="#1f2933">2.94x</text>
+<text x="827.50" y="464" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#334e68">sparse / batch 300</text>
+<text x="450.0" y="496" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" fill="#334e68">Profile and batch size</text>
+<text transform="translate(26 260.0) rotate(-90)" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" fill="#334e68">How many times classic is slower</text>
+</svg>

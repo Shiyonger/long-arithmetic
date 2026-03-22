@@ -1,0 +1,31 @@
+# Build artifacts
+bin/
+obj/
+out/
+
+# Test outputs
+TestResults/
+*.trx
+*.coverage
+coverage/
+
+# User-specific IDE files
+.idea/
+.vs/
+*.user
+*.rsuser
+*.suo
+*.userprefs
+*.DotSettings.user
+
+# Local tool caches
+.dotnet_home/
+.nuget/
+
+# OS-generated files
+.DS_Store
+Thumbs.db
+
+# Load-test generated raw inputs/outputs
+load-test-artifacts/input-*.json
+load-test-artifacts/output-*.json

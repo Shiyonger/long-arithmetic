@@ -1,3 +1,5 @@
+using System;
+
 namespace LongArithmetic.Core.Models;
 
 public readonly struct BigNumber
